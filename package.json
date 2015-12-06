@@ -1,0 +1,31 @@
+{
+  "name": "react-native-web-container",
+  "version": "1.0.0",
+  "description": "A wrapper around the react native WebView to add autoHeight, scrub html, etc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danrigsby/react-native-web-container.git"
+  },
+  "keywords": [
+    "react-native",
+    "react",
+    "WebView"
+  ],
+  "author": "Dan Rigsby",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danrigsby/react-native-web-container/issues"
+  },
+  "homepage": "https://github.com/danrigsby/react-native-web-container#readme",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "lodash": "3.10.1",
+    "react-native": "*",
+    "safe-html": "*"
+  }
+}
