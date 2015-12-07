@@ -2,22 +2,22 @@
 
 import React from 'react-native';
 let { WebView } = React;
-import safeHtml from 'safe-html';
+import sanitizeHtml from 'sanitize-html';
 import _ from 'lodash';
 
 const script = '<script>window.location.hash = 1;document.title = document.height;</script>';
 
 const defaultSafeConfig = _.defaults(
   {
-    allowedTags: safeHtml.DEFAULT_CONFIG.allowedTags.concat(['img', 'style']),
+    allowedTags: sanitizeHtml.defaults.allowedTags.concat(['img', 'style']),
     allowedAttributes: _.defaults(
       {
         id: {allTags: true},
         style: {allTags: true},
         src: {allowedTags: ['img']}
-      }, safeHtml.DEFAULT_CONFIG.allowedAttributes)
+      }, sanitizeHtml.defaults.allowedAttributes)
   },
-  safeHtml.DEFAULT_CONFIG
+  sanitizeHtml.defaults
 );
 
 let scrubHtml = function (html, makeSafe) {
