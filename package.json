@@ -23,9 +23,11 @@
   "homepage": "https://github.com/danrigsby/react-native-web-container#readme",
   "devDependencies": {
   },
+  "peerDepenencies": {
+    "react-native": ">=0.10.0"
+  },
   "dependencies": {
     "lodash": "3.10.1",
-    "react-native": "^0.14.0",
     "sanitize-html": "^1.11.2"
   }
 }
