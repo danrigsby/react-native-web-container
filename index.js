@@ -31,9 +31,11 @@ let scrubHtml = function (html, makeSafe) {
 };
 
 class WebContainer extends React.Component {
-  constructor() {
+  constructor(props) {
     super();
-    this.state = {};
+    this.state = {
+      height: props.height || 0
+    };
   }
 
   onNavigationStateChange(navState) {
