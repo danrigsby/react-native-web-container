@@ -69,10 +69,10 @@ class WebContainer extends React.Component {
 
 WebContainer.propTypes = {
   autoHeight: React.PropTypes.boolean,
-  makeSafe: React.PropTypes.oneOf(
+  makeSafe: React.PropTypes.oneOf([
     React.PropTypes.boolean,
     React.PropTypes.object
-  )
+  ])
 };
 
 WebContainer.defaultProps = {
